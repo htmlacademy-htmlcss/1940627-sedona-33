@@ -14,7 +14,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;  
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -22,9 +30,32 @@ body {
   color: #000000;
 }
 
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
 .page-header {
   background: #FFFFFF;
   color: #000000;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  width: 450px;
+  margin: 0;
+  padding: 0;
+}
+
+ .navigation-user {
+   width: 300px;
 }
 
 .navigation-link {
@@ -72,6 +103,15 @@ body {
   text-align: center;
 }
 
+.welcome-banner-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
 .main-intro {
   background-color: #FFFFFF;
   color: #000000;
@@ -99,9 +139,14 @@ body {
 
 .advantages-list {
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-item {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
@@ -119,7 +164,7 @@ body {
   color: #FFFFFF;
 }
 
-.with-image, .with-image-reverse {
+.with-image {
   background: #83B3D3;
   color: #FFFFFF;
 }
@@ -192,6 +237,8 @@ body {
 }
 
 .page-footer {
+  display: flex;
+  justify-content: space-around;
   background: #FFFFFF;
   color: #000000;
   text-align: center;
@@ -200,6 +247,23 @@ body {
 .page-footer a {
   color: #000000;
   text-decoration: none;
+}
+
+.footer-social-list {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-social {
+  max-width: 110px;
+}
+
+.footer-contacts {
+  width: 720px;
+}
+
+.footer-logo {
+  max-width: 110px;
 }
 
 .contacts-phone {
@@ -239,6 +303,11 @@ body {
   line-height: 21px;
 }
 
+.catalog-filter {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
@@ -251,10 +320,16 @@ body {
   line-height: 23px;
 }
 
+.filter-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
 .filter-button {
   font-size: 16px;
   line-height: 21px;
   border-radius: 4px;
+  align-self: center;
 }
 
 .reset-button {
@@ -298,7 +373,15 @@ body {
   border: 2px solid #000000;
 }
 
+.product-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .product-card {
+  width: 340px;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
