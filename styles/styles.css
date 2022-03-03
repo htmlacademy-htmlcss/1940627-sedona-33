@@ -69,16 +69,15 @@ body {
   margin: 0;
   margin-left: 169px;
   padding: 0;
+  flex-grow: 1;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  width: 650px;
   list-style-type: none;
 }
 
  .navigation-user {
-   margin-left: auto;
-   width: 300px;
+   margin-left: 0;
    justify-content: flex-end;
 }
 
@@ -150,11 +149,11 @@ body {
 
 .navigation-button {
   margin-left: 21px;
+  padding: 9px 0 8px ;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 160px;
-  height: 37px;
   font-size: 16px;
   line-height: 20px;
   border-radius: 4px;
@@ -452,7 +451,6 @@ body {
   align-items: center;
   background: #FFFFFF;
   color: #000000;
-  text-align: center;
 }
 
 .footer-social-list {
@@ -464,8 +462,8 @@ body {
 }
 
 .footer-social {
-  max-width: 120px;
-  margin-right: 62px;
+  width: 240px;
+  margin-right: 123px;
 }
 
 .footer-social-item {
@@ -478,7 +476,7 @@ body {
   margin-bottom: 10px;
 }
 
-.footer-social-item:nth-child(3n) {
+.footer-social-item:last-child {
   margin-right: 0;
 }
 
@@ -508,10 +506,6 @@ body {
 .button-social:active {
   opacity: 0.3;
   outline: none;
-}
-
-.footer-contacts {
-  width: 720px;
 }
 
 .footer-logo {
@@ -600,13 +594,17 @@ body {
 
 .breadcrumbs-link {
   position: relative;
-  margin-right: 22px;
+  margin-right: 17px;
   display: block;
   color: inherit;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   text-decoration: none;
+}
+
+.breadcrumbs-item:not(:first-child) .breadcrumbs-link {
+  padding: 0 5px;
 }
 
 .breadcrumbs-link svg{
@@ -662,17 +660,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 52px;
+  padding-top: 55px;
 }
 
 .filter-button {
+  padding: 13px 0 14px;
   width: 160px;
-  height: 48px;
   font-size: 16px;
   line-height: 21px;
   border-radius: 4px;
   align-self: center;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .filter-button:focus {
@@ -685,8 +683,11 @@ body {
 }
 
 .reset-button {
+  display: flex;
+  justify-content: center;
   width: 100px;
   color: #FFFFFF;
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
