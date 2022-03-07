@@ -707,9 +707,13 @@ body {
  
 .field-button-container input[type="number"]::-webkit-outer-spin-button, 
 .field-button-container input[type="number"]::-webkit-inner-spin-button { 
-  display: none; 
+  display: none;
 } 
  
+.field-button-container input[type="number"] {
+  -moz-appearance:textfield;
+}
+
 .field-button { 
   display: flex; 
   justify-content: center; 
