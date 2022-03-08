@@ -1090,7 +1090,7 @@ body {
   margin: 0;
 } 
  
-.range-input input[type="number"] {
+.range-input {
   -moz-appearance:textfield;
 }
 
