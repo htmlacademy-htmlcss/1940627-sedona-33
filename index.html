@@ -198,6 +198,67 @@
           </a>
         </section>
       </footer>
-    </div>    
+    </div>
+    
+    <div class="modal-container modal-container-close">  
+      <div class="modal modal-appointment">  
+        <button class="modal-close-button">
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z"/>
+          </svg>  
+          <span class="visually-hidden">Закрыть</span>  
+        </button>  
+        <section class="appointment-content">  
+          <h2 class="appointment-title">Поиск гостиницы в Седоне</h2>  
+          <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">  
+            <div class="field-group appointment-field-arrival">  
+              <label class="appointment-field-lable" for="arrival-date">Дата заезда:</label>  
+              <input class="appointment-field" type="text" name="arrival-date" id="arrival-date" placeholder="Укажите дату">  
+              <span class="appointment-field-message message-error">Мы не можем отправить вас в прошлое.</span> 
+            </div>  
+            <div class="field-group appointment-field-departure">  
+              <label class="appointment-field-lable" for="departure-date">Дата выезда:</label>   
+              <input class="appointment-field" type="text" name="departure-date" id="departure-date" placeholder="Укажите дату">  
+              <span class="appointment-field-message">На эти даты есть свободные номера. Пока есть.</span>    
+            </div>    
+            <div class="field-group appointment-field-adults">  
+              <label class="appointment-field-lable" for="adults">Взрослые:</label> 
+              <div class="field-button-container"> 
+                <button class="field-button button-value-decrease" type="button"> 
+                  <svg class="field-button-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z"/></svg>   
+                </button>  
+                <input class="appointment-field" type="number" name="adults" id="adults" min="0" placeholder="0" readonly tabindex="1"> 
+                <button class="field-button button-value-increase" type="button"> 
+                  <svg class="field-button-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg> 
+                </button> 
+              </div>   
+            </div> 
+            <div class="field-group appointment-field-children"> 
+              <span class="appointment-field-lable field-label-icon">   
+                <label class="appointment-field-lable" for="children">Дети:</label> 
+                <span class="tooltip"> 
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label"> 
+                    <svg class="tooltip-icon" width="25" height="25" viewBox="0 0 25 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> 
+                      <circle cx="12.5" cy="12.5" r="12.5"/> 
+                      <path d="M12 17h1v-6h-1v6ZM13 8h-1v1h1V8Z" fill="#fff"/></svg> 
+                  </button> 
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span> 
+                </span> 
+              </span> 
+              <div class="field-button-container"> 
+                <button class="field-button button-value-decrease" type="button"> 
+                  <svg class="field-button-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z"/></svg>   
+                </button>  
+                <input class="appointment-field" type="number" name="children" id="children" min="0" placeholder="0" readonly tabindex="1"> 
+                <button class="field-button button-value-increase" type="button"> 
+                  <svg class="field-button-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg> 
+                </button>  
+              </div>   
+            </div> 
+            <button class="appointment-button blue-button" type="submit">Найти</button>       
+          </form>  
+        </section>  
+      </div>  
+    </div>
   </body>
 </html>
