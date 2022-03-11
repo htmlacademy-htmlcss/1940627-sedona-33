@@ -296,6 +296,7 @@ body {
 }
 
 .advantages-item-with-icon {
+  display: inline-block;
   padding-top: 80px;
   padding-bottom: 88px;
 }
@@ -374,8 +375,7 @@ body {
 
 .booking-button {
   box-sizing: border-box;
-  padding-top: 14px;
-  padding-bottom: 10px;
+  padding: 14px 20px 10px;
   width: 575px;
   font-size: 20px;
   line-height: 36px;
@@ -487,7 +487,7 @@ body {
 
 .footer-social {
   width: 240px;
-  margin-right: 123px;
+  margin-right: 98px;
 }
 
 .footer-social-item {
@@ -544,6 +544,7 @@ body {
 }
 
 .contacts-phone {
+  padding: 0 25px;
   color: #000000;
   text-decoration: none;
   font-weight: 400;
@@ -957,6 +958,20 @@ body {
   content: none;
 }
 
+.breadcrumbs-link:hover, .reset-button:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus, .reset-button:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.breadcrumbs-link:active, .reset-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
 .catalog-filter-list {
   margin: 0;
   padding: 0;
@@ -980,6 +995,10 @@ body {
 
 .filter-group-housing {
   margin-right: 168px;
+}
+
+.filter-group-pricing {
+  margin-right: 81px;
 }
 
 .filter-group-pricing .catalog-filter-title{
@@ -1200,7 +1219,6 @@ body {
 }
 
 .filter-buttons {
-  margin-left: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1214,7 +1232,7 @@ body {
   line-height: 21px;
   border-radius: 4px;
   align-self: center;
-  margin-bottom: 18px;
+  margin-bottom: 13px;
 }
 
 .filter-button:focus {
@@ -1227,9 +1245,7 @@ body {
 }
 
 .reset-button {
-  display: flex;
-  justify-content: center;
-  width: 100px;
+  padding: 5px 10px;
   color: #FFFFFF;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
@@ -1239,20 +1255,6 @@ body {
   outline: none;
   background: transparent; 
   cursor: pointer;
-}
-
-.breadcrumbs-link:hover, .reset-button:hover {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.breadcrumbs-link:focus, .reset-button:focus {
-  outline: 3px solid #83B3D3;
-  border-radius: 4px;
-}
-
-.breadcrumbs-link:active, .reset-button:active {
-  color: rgba(255, 255, 255, 0.3);
-  outline: none;
 }
 
 .sorting-container {
@@ -1399,7 +1401,7 @@ body {
 }
 
 .product-card-button {
-  padding: 8px 0;
+  padding: 8px 10px;
   font-size: 16px;
   line-height: 21px;
   border-radius: 4px;
@@ -1451,7 +1453,7 @@ body {
 
 .product-card-raiting {
   margin: 0;
-  padding: 8px 0;
+  padding: 8px 10px;
   background: #F2F2F2;
   border-radius: 4px;
   font-weight: 400;
@@ -1470,7 +1472,7 @@ body {
 
 .pagination-button {
   display: block;
-  padding: 17px 0;
+  padding: 17px 20px;
   border-radius: 4px;
   font-size: 20px;
   line-height: 26px;
