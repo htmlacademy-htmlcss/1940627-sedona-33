@@ -96,7 +96,7 @@ body {
 .navigation-user .navigation-link {
   min-width: 20px;
   min-height: 20px;
-  padding: 22px 11px;
+  padding: 22px 11px 23px;
 }
 
 .navigation-icon {
@@ -218,7 +218,7 @@ body {
   position: relative;
   min-height: 485px;
   margin-bottom: 63px;
-  background-color: #333333;
+  background-color: #756257;
   background-image: url("../images/background-banner.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -229,7 +229,7 @@ body {
   content: url("../images/welcome-banner-devider.svg");
   position: absolute;
   left: 0;
-  bottom: -4px;
+  top: 428px;
 } 
 
 .welcome-banner-image {
@@ -274,7 +274,7 @@ body {
 
 .advantages {
   color: #333333;
-  margin-bottom: 90px;
+  margin-bottom: 91px;
 }
 
 .advantages-list {
@@ -288,24 +288,32 @@ body {
 
 .advantages-item {
   width: 400px;
-  height: 384px;
+  padding: 98px 75px 87px;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+  box-sizing: border-box;
+}
+
+.advantages-item-with-icon {
+  padding-top: 80px;
+  padding-bottom: 88px;
 }
 
 .advantages-image {
   display: block;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-item-icon {
-  padding-top: 80px;
   margin-bottom: 17px;
 }
 
 .advantages-title {
-  margin: 98px auto 29px;
-  width: 172px;
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 0 39px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -313,31 +321,26 @@ body {
   color: #000000;
 }
 
-.title-white {
-  color: #FFFFFF;
-}
-
-.advantages-with-icon .advantages-title {
-  margin-top: 0;
+.advantages-item-with-icon .advantages-title {
   margin-bottom: 19px;
 }
 
 .advantages-number {
-  margin-top: 0;
-  margin-bottom: 29px;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .advantages-description {
-  margin: 0 auto 30px;
-  width: 250px;
-}
-
-.dark-blue .advantages-description {
-  width: 220px;
+  margin: 0;
+  min-height: 63px;
 }
 
 .dark-blue {
   background: #83B3D3;
+  color: #FFFFFF;
+}
+
+.dark-blue .advantages-title {
   color: #FFFFFF;
 }
 
@@ -383,7 +386,7 @@ body {
 .newsletter{
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: #333333;
+  background-color: #756257;
   background-image: url("../images/background-newsletter.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -891,7 +894,7 @@ body {
   padding-top: 44px;
   padding-bottom: 71px;
   margin-bottom: 44px;
-  background-color: #333333;
+  background-color: #756257;
   color: #FFFFFF;
   background-image: url("../images/background-catalog.jpg");
   background-repeat: no-repeat;
