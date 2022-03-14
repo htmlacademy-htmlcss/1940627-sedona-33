@@ -59,6 +59,10 @@ img {
   color: #000000;
 }
 
+.navigation-logo {
+  width: 139px;
+}
+
 .page-header-logo {
   display: block;
   position: absolute;
@@ -73,7 +77,7 @@ img {
 
 .navigation-list {
   margin: 0;
-  margin-left: 169px;
+  margin-left: 30px;
   padding: 0;
   flex-grow: 1;
   display: flex;
@@ -326,7 +330,6 @@ img {
 .advantages-title {
   margin: 0;
   margin-bottom: 29px;
-  padding: 0 39px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -981,6 +984,10 @@ img {
 .reset-button:focus {
   outline: 3px solid #83b3d3;
   border-radius: 4px;
+}
+
+.breadcrumbs-item:last-child .breadcrumbs-link:focus {
+  outline: none;
 }
 
 .breadcrumbs-link:active,
