@@ -79,15 +79,15 @@ img {
   margin: 0;
   margin-left: 30px;
   padding: 0;
-  flex-grow: 1;
+  width: 575px;
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
   list-style-type: none;
 }
 
 .navigation-user {
-  margin-left: 0;
+  width: 315px;
+  margin-left: auto;
   justify-content: flex-end;
 }
 
@@ -159,7 +159,7 @@ img {
 }
 
 .navigation-button {
-  margin-left: 21px;
+  margin: 14px 0 14px 21px;
   padding: 9px 10px 8px;
   display: flex;
   justify-content: center;
@@ -311,20 +311,10 @@ img {
   grid-column: span 2;
 }
 
-.advantages-item-with-icon {
-  display: inline-block;
-  padding-top: 80px;
-  padding-bottom: 89px;
-}
-
 .advantages-image {
   display: block;
   margin: 0;
   padding: 0;
-}
-
-.advantages-item-icon {
-  margin-bottom: 17px;
 }
 
 .advantages-title {
@@ -337,8 +327,37 @@ img {
   color: #000000;
 }
 
-.advantages-item-with-icon .advantages-title {
+.advantages-house-icon .advantages-title,
+.advantages-food-icon .advantages-title,
+.advantages-souvenir-icon .advantages-title {
   margin-bottom: 19px;
+}
+
+.advantages-house-icon {
+  padding-top: 186px;
+  padding-bottom: 88px;
+  background-image: url("../images/icons/house-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 158px 80px;
+  background-size: 84px 84px;
+}
+
+.advantages-food-icon {
+  padding-top: 186px;
+  padding-bottom: 88px;
+  background-image: url("../images/icons/food-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 158px 80px;
+  background-size: 84px 84px;
+}
+
+.advantages-souvenir-icon {
+  padding-top: 186px;
+  padding-bottom: 88px;
+  background-image: url("../images/icons/souvenir-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 158px 80px;
+  background-size: 84px 84px;
 }
 
 .advantages-number {
@@ -351,21 +370,25 @@ img {
   min-height: 63px;
 }
 
-.dark-blue {
-  background: #83b3d3;
+.dark-blue-background {
+  background-color: #83b3d3;
   color: #ffffff;
 }
 
-.dark-blue .advantages-title {
+.dark-blue-background .advantages-title {
   color: #ffffff;
 }
 
-.cold-light-blue {
-  background: rgba(131, 179, 211, 0.12);
+.cold-light-blue-background {
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
-.cold-blue {
-  background: rgba(131, 179, 211, 0.2);
+.white-background {
+  background-color: #ffffff;
+}
+
+.cold-blue-background {
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .booking {
@@ -1312,6 +1335,7 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
+  background-color: #ffffff;
   color: #333333;
   border: 2px solid #e6e6e6;
   border-radius: 4px;
