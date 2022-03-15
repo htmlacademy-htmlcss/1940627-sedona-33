@@ -64,7 +64,7 @@
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества.</h2>
           <ul class="advantages-list">
-            <li class="advantages-item dark-blue">
+            <li class="advantages-item dark-blue-background">
               <h3 class="advantages-title">Настоящий<br> городок</h3>
               <p class="advantages-number">— №1 —</p>
               <p class="advantages-description"> Седона — не аттракцион <br> для туристов, там течёт <br> своя жизнь</p>
@@ -72,40 +72,37 @@
             <li class="advantages-photo">
               <img class="advantages-image" src="images/sedona-photo-1.jpg" width="800" height="384" alt="Фотография Седоны."/>
             </li>
-            <li class="advantages-item cold-light-blue advantages-item-with-icon">
-              <img class="advantages-item-icon" src="./images/icons/house-icon.svg" width="84" height="84" alt="Иконка жилья.">
+            <li class="advantages-item cold-light-blue-background advantages-house-icon">
               <h3 class="advantages-title">Жильё</h3>
               <p class="advantages-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
             </li>
-            <li class="advantages-item advantages-item-with-icon">
-              <img class="advantages-item-icon" src="./images/icons/food-icon.svg" width="84" height="84" alt="Иконка еды.">
+            <li class="advantages-item white-background advantages-food-icon">
               <h3 class="advantages-title">Еда</h3>
               <p class="advantages-description">Всегда заказывайте<br> топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li class="advantages-item cold-light-blue advantages-item-with-icon">
-              <img class="advantages-item-icon" src="./images/icons/souvenir-icon.svg" width="84" height="84" alt="Иконка сувенира.">
+            <li class="advantages-item cold-light-blue-background advantages-souvenir-icon">
               <h3 class="advantages-title">Сувениры</h3>
               <p class="advantages-description">Не только китайского,<br> но и настоящего местного производства!</p>
             </li>
             <li class="advantages-photo">
               <img class="advantages-image" src="images/sedona-photo-2.jpg" width="800" height="384" alt="Фотография моста дьявола."/>
             </li>
-            <li class="advantages-item dark-blue">
+            <li class="advantages-item dark-blue-background">
               <h3 class="advantages-title">Там есть<br> мост дьявола</h3>
               <p class="advantages-number">— №2 —</p>
               <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </li>
-            <li class="advantages-item cold-light-blue">
+            <li class="advantages-item cold-light-blue-background">
               <h3 class="advantages-title">Небольшая<br> площадь</h3>
               <p class="advantages-number">— №3 —</p>
               <p class="advantages-description"> Все достопримечательности находятся очень близко</p>
             </li>
-            <li class="advantages-item cold-blue">
+            <li class="advantages-item cold-blue-background">
               <h3 class="advantages-title">Красивая<br> дорога</h3>
               <p class="advantages-number">— №4 —</p>
               <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
-            <li class="advantages-item cold-light-blue">
+            <li class="advantages-item cold-light-blue-background">
               <h3 class="advantages-title">Мало<br> туристов</h3>
               <p class="advantages-number">— №5 —</p>
               <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
@@ -115,7 +112,7 @@
         <section class="booking">
           <h2 class="booking-title title">Заинтересовались?</h2>
           <p class="booking-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button class="booking-button brown-button" type="submit">Поиск гостиницы в Седоне</button>
+          <button class="booking-button brown-button" type="button">Поиск гостиницы в Седоне</button>
         </section>
         <section class="newsletter">
           <h2 class="newsletter-title title">Подпишитесь на рассылку</h2>
@@ -195,7 +192,7 @@
     </div>
     <div class="modal-container modal-container-close">  
       <div class="modal modal-appointment">  
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <svg width="13" height="13" viewBox="0 0 13 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z"/>
           </svg>  
@@ -207,7 +204,7 @@
             <div class="field-group appointment-field-arrival">  
               <label class="appointment-field-lable" for="arrival-date">Дата заезда:</label>
               <div class="appointment-field-container">
-                <input class="appointment-field" type="text" name="arrival-date" id="arrival-date" placeholder="Укажите дату" value="27 апреля 2020">
+                <input class="appointment-field" type="text" name="arrival-date" id="arrival-date" placeholder="Укажите дату" value="27 апреля 2020" required>
                 <div class="appointment-field-calendar" tabindex="0"></div>
               </div>        
               <span class="appointment-field-message message-error">Мы не можем отправить вас в прошлое.</span> 
@@ -215,7 +212,7 @@
             <div class="field-group appointment-field-departure">  
               <label class="appointment-field-lable" for="departure-date">Дата выезда:</label>
               <div class="appointment-field-container">   
-                <input class="appointment-field" type="text" name="departure-date" id="departure-date" placeholder="Укажите дату" value="1 сентября 2021">
+                <input class="appointment-field" type="text" name="departure-date" id="departure-date" placeholder="Укажите дату" value="1 сентября 2021" required>
                 <div class="appointment-field-calendar" tabindex="0"></div>  
               </div>
               <span class="appointment-field-message">На эти даты есть свободные номера. Пока есть.</span>
@@ -224,11 +221,13 @@
               <label class="appointment-field-lable" for="adults">Взрослые:</label> 
               <div class="field-button-container"> 
                 <button class="field-button button-value-decrease" type="button"> 
-                  <svg class="field-button-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z"/></svg>   
+                  <svg class="field-button-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z"/></svg>
+                  <span class="visually-hidden">Уменьшить количество.</span>  
                 </button>  
                 <input class="appointment-field" type="number" name="adults" id="adults" min="0" placeholder="0" value="2"> 
                 <button class="field-button button-value-increase" type="button"> 
-                  <svg class="field-button-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg> 
+                  <svg class="field-button-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg>
+                  <span class="visually-hidden">Увеличить количество.</span>
                 </button> 
               </div>   
             </div> 
@@ -246,11 +245,13 @@
               </span> 
               <div class="field-button-container"> 
                 <button class="field-button button-value-decrease" type="button"> 
-                  <svg class="field-button-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z"/></svg>   
-                </button>  
-                <input class="appointment-field" type="number" name="children" id="children" min="0" placeholder="0" value="1"> 
-                <button class="field-button button-value-increase" type="button"> 
-                  <svg class="field-button-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg> 
+                  <svg class="field-button-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z"/></svg>
+                  <span class="visually-hidden">Уменьшить количество.</span>
+                </button>
+                <input class="appointment-field" type="number" name="children" id="children" min="0" placeholder="0" value="1">
+                <button class="field-button button-value-increase" type="button">
+                  <svg class="field-button-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg>
+                  <span class="visually-hidden">Увеличить количество.</span>
                 </button>  
               </div>   
             </div> 
